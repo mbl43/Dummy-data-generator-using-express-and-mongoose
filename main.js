@@ -68,10 +68,14 @@ app.get("/generate", async (req, res) => {
       city: getrandom(cityNames),
       isManager: Math.random() > 0.5 ? true : false,
     });
-    console.log("e", e1);
+     
   }
   res.render("index", { foo: "FOO" });
 });
+
+ 
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
